@@ -1,0 +1,97 @@
+
+name="Anish"
+sport="Foot"
+
+echo "My name is $name and my sport is ${sport}ball."
+
+read -p "What is your height? " height
+
+read age
+
+echo "Your height is $height and age is $age."
+
+echo "What are you boy? "
+read species typ
+
+echo "You are $species $typ not $typ $species."
+
+
+echo C is $C
+A=10
+export B=$A
+echo $B
+#echo Hello World
+#echo -n Good to "\t\t" see you "\n\n" #n echo ma halepaxi \t ani \n kam gardeina ani yo bhanda talako new line ma print hudeina 
+#echo Thanks
+#echo -e Hi "\t\t\t" There "\n\n" #e echo ma halepaxi \t ra \n kam garxa
+#echo -E Bye "\t\t\t" For now "\n\n" # E echo ma halepaxi kei pani kam gardeina
+#echo Yoo
+
+#echo YOo\t\t asdasd\n\n
+#echo ass
+
+X=36
+{
+	X=69
+}
+echo $X #it prints 69
+
+z=36
+(
+z=69
+)
+echo $z # it prints 36
+
+
+
+
+
+
+
+function f1 {
+	x=7
+	y=8
+}
+function f2 {
+	x=36
+	y=69
+}
+typeset x  #typeset function bahira use garepaxi function ma variable ko value j xa tei print hunxa function bhitra print garyo bhane function bahira ko variable jati rakhe pani matlab hudeina
+x=1
+y=2
+echo x is $x
+echo y is $y
+f1
+echo x is $x
+echo y is $y
+f2
+echo x is $x
+echo y is $y
+
+
+
+x=6
+let y=$x**2
+echo $y
+
+
+declare -l lstring="ABCdef"
+declare -u ustring="ABCdef"
+declare -r readonly="A value"
+declare -a Myarray
+declare -A Myarray2
+
+echo lstring = $lstring
+echo ustring = $ustring
+echo readonly = $readonly
+readonly="New value"
+Myarray[1]="First Value"
+Myarray[2]="Second Value"
+echo 'Myarray[1]= ' ${Myarray[1]}
+echo 'Myarray[2]= ' ${Myarray[2]}
+Myarray2["ColdDOg"]="Football"
+Myarray2["hotdog"]="baseball"
+echo 'Myarray2[hotdog]= ' ${Myarray2["hotdog"]}
+echo 'Myarray2[ColdDog]= ' ${Myarray2["ColdDOg"]}
+
+
